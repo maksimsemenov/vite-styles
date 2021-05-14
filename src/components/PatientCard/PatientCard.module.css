@@ -1,0 +1,43 @@
+.card {
+	display: grid;
+
+	grid-template-columns: 46px auto;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		'avatar name'
+		'avatar dob'
+		'avatar phone';
+
+	grid-column-gap: 10px;
+	align-items: start;
+
+	padding: 8px;
+
+	border-radius: 5px;
+
+	cursor: pointer;
+
+	color: #000;
+	text-decoration: none;
+}
+
+.card:hover {
+	background-color: #f5f5f5;
+}
+
+.card:focus-visible {
+	outline-color: #000;
+}
+
+.avatar {
+	grid-area: avatar;
+}
+
+.name {
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.dob {
+	color: #999;
+}
